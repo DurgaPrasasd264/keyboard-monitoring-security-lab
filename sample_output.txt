@@ -1,0 +1,4 @@
+Key.cmd'c''h'Key.backspaceKey.backspaceKey.backspace'y''o''u'Key.space'a''r''e'Key.space'h''a''c''k''e''d''h''e''l''l''o'Key.space'w''o''r''l''d''1''2''3'
+Key.space'T''h''i''s'Key.space'i''s'
+Key.space'a'Key.space't''e''s''t'
+Key.space'2''0''2''5'
