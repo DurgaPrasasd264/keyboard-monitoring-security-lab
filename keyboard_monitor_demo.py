@@ -63,18 +63,19 @@ def stop_monitoring():
 root = Tk()
 root.title("Keyboard Monitoring Security Lab")
 
-label = Label(root, text='Click "Start" to begin keylogging.')
+label = Label(root, text='Click "Start" to begin monitoring.')
 label.config(anchor=CENTER)
 label.pack()
 
-start_button = Button(root, text="Start", command=start_keylogger)
+start_button = Button(root, text="Start", command=start_monitoring)
 start_button.pack(side=LEFT)
 
-stop_button = Button(root, text="Stop", command=stop_keylogger, state='disabled')
+stop_button = Button(root, text="Stop", command=stop_monitoring, state='disabled')
 stop_button.pack(side=RIGHT)
 
 root.geometry("250x250")
 
 root.mainloop()
+
 
 
