@@ -9,11 +9,11 @@ flag = False
 keys = ""
 
 def generate_text_log(key):
-    with open('key_log.txt', "w+") as keys:
+    with open('sample_output.txt', "w+") as keys:
         keys.write(key)
 
 def generate_json_file(keys_used):
-    with open('key_log.json', '+wb') as key_log:
+    with open('sample_output.json', '+wb') as key_log:
         key_list_bytes = json.dumps(keys_used).encode()
         key_log.write(key_list_bytes)
 
@@ -76,3 +76,4 @@ stop_button.pack(side=RIGHT)
 root.geometry("250x250")
 
 root.mainloop()
+
